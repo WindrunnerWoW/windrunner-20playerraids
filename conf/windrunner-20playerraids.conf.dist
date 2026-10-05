@@ -1,0 +1,37 @@
+###################################################################################################
+# windrunner-20playerraids module configuration
+#
+# Turns the 40-player raids into 20-player raids. All settings are read once at startup;
+# changes need a server restart.
+###################################################################################################
+
+[ModuleConf]
+
+#    Raid20.Enable
+#        Cap the listed raids at Raid20.MaxPlayers, scale creature health and switch on the
+#        20-player encounter adjustments. Off by default for testing and rollback.
+#        Default: 0
+
+Raid20.Enable = 0
+
+#    Raid20.MaxPlayers
+#        Player cap for the listed raids (GMs do not count).
+#        Must be at least 2 so Gothik can have a player on each side.
+#        Default: 20
+
+Raid20.MaxPlayers = 20
+
+#    Raid20.HealthPercent
+#        Health of every creature on the listed raids, in percent of its template health.
+#        Must be finite, greater than 0 and no greater than 100.
+#        Incoming damage, loot and gold are unchanged.
+#        Default: 50
+
+Raid20.HealthPercent = 50
+
+#    Raid20.Maps
+#        Comma-separated raid map ids to convert. Maps that are not raids, or that already
+#        allow Raid20.MaxPlayers or fewer, are skipped with an error in the log.
+#        Default: "44,45,249,409,469,531,533,807,814"
+
+Raid20.Maps = "44,45,249,409,469,531,533,807,814"

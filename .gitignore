@@ -1,0 +1,9 @@
+/build/
+/.cache/
+.DS_Store
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
